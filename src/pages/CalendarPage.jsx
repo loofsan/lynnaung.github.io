@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { Navbar } from "../components";
 import Wrapper from "../assets/wrappers/CalendarPage";
 
 const CalendarPage = () => {
   return (
-    <div>
-      CalendarPage
-    </div>
+    <Wrapper>
+      <Navbar />
+    </Wrapper>
   );
 };
 export default CalendarPage;
