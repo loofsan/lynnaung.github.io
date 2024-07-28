@@ -1,11 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-import {
-  HomeLayout,
-  Landing,
-  Error,
-  CalendarPage,
-} from "./pages";
+import { ReactLenis, useLenis } from "lenis/react";
+import { HomeLayout, Landing, Error, CalendarPage } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +14,7 @@ const router = createBrowserRouter([
       },
       {
         path: "calendar",
-        element: <CalendarPage />
+        element: <CalendarPage />,
       },
     ],
   },

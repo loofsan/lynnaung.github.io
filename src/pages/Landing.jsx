@@ -5,7 +5,7 @@ import Wrapper from "../assets/wrappers/LandingPage";
 import main from "../assets/images/logoWhite.png";
 import { FaChevronDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { Navbar } from "../components";
+import { Navbar, BoxReveal, ImageHover, FullScreenSlider } from "../components";
 
 const Landing = () => {
   useEffect(() => {
@@ -60,23 +60,17 @@ const Landing = () => {
         </Line>
         <Line className="singleLine">
           <Text className="Text">
-            <span>Mo</span>
-            <span>del</span>
-            <span>ing</span>
+            <span>Esthetics</span>
           </Text>
         </Line>
         <Line className="singleLine">
           <Text className="Text">
-            <span>B</span>
-            <span>oo</span>
-            <span>king</span>
+            <span>Barbering</span>
           </Text>
         </Line>
         <Line className="singleLine">
           <Text className="Text">
-            <span>App</span>
-            <span>oint</span>
-            <span>ment</span>
+            <span>Cosmetology</span>
           </Text>
         </Line>
         <ArrowIcon className="arrowIcon" onClick={scrollToNextSection}>
@@ -84,7 +78,24 @@ const Landing = () => {
         </ArrowIcon>
       </div>
       <div className="container page" ref={ref}>
-        dcacad
+        <div className="skyIntro">
+          <div className="text">
+            <BoxReveal boxColor={"#f2f2f2"} duration={0.5}>
+              <h2>About Us</h2>
+            </BoxReveal>
+            <BoxReveal boxColor={"#f2f2f2"} duration={0.5}>
+              Skyline College offers three career and technical education
+              programs with courses focusing on theoretical foundation,
+              practical skills, businesss knowledge, and the professional and
+              ethical training needed for licensing through the California State
+              Board of Barbering and Cosmetology.
+            </BoxReveal>
+          </div>
+          <ImageHover />
+        </div>
+      </div>
+      <div className="container page">
+        <FullScreenSlider />
       </div>
     </Wrapper>
   );

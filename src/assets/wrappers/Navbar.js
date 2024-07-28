@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.nav`
   .nav {
     position: fixed;
-    z-index: 2;
+    z-index: 1000;
   }
 
   .navbar {
@@ -174,7 +174,7 @@ const Wrapper = styled.nav`
     width: 100%;
     bottom: 0;
     left: 0;
-    paddding: 2em;
+    padding: 2em;
     margin-bottom: 2px;
     display: flex;
     color: white;
@@ -185,7 +185,7 @@ const Wrapper = styled.nav`
     @media (max-width: 900px),
       @media (max-width: 768px),
       @media (max-width: 480px) {
-      padding: 14px 14px 14px 14px;
+      padding: 1em;
     }
   }
 

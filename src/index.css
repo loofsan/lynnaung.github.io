@@ -1,5 +1,5 @@
 /* ============= GLOBAL CSS =============== */
-@import url('satoshi.css');
+@import url("satoshi.css");
 
 *,
 ::after,
@@ -26,12 +26,11 @@ html {
   --primary-800: #0a6c74;
   --primary-900: #044e54;
 
-    /* Pink */
-  --pink-50: #FBE4E0;
+  /* Pink */
+  --pink-50: #fbe4e0;
   --pink-100: rgb(253, 228, 221);
-  --pink-200:  rgb(251, 230, 224);
+  --pink-200: rgb(251, 230, 224);
   --pink-300: rgb(243, 182, 165);
-
 
   /* grey */
   --grey-50: #f8fafc;
@@ -94,7 +93,7 @@ html {
 body {
   background: var(--background-color);
   color: var(--text-color);
-  font-family: 'Satoshi-Regular';
+  font-family: "Satoshi-Regular";
   font-weight: 400;
   line-height: 1;
 }
